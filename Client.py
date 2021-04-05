@@ -1,7 +1,7 @@
 from socket import *
 
 # Running on mininet
-serverName = 'Ren' #Hostname goes here
+serverName = 'mininet-vm' #Hostname goes here
 serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName,serverPort))
