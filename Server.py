@@ -6,7 +6,7 @@ import threading
 from multiprocessing import Queue
 import time
 
-host = 'Ren'
+host = 'mininet-vm'
 port = 12000
 
 #create the socket 
