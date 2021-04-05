@@ -5,6 +5,7 @@ serverName = 'mininet-vm' #Hostname goes here
 serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_STREAM)
 clientSocket.connect((serverName,serverPort))
+clientSocket.setblocking(False)
 
 # Receive the message to be the setting clients
 clientName = clientSocket.recv(1024).decode()
